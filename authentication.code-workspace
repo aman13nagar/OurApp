@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "../authentication"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}

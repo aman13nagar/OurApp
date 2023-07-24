@@ -1,0 +1,36 @@
+<%-include("Partials/header")-%>
+<link rel="stylesheet" href="/style.css">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/home-dashboard">OurApp</a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <form class="form-inline my-2 my-lg-0" action="/Create-post" method="POST">
+        <div>
+          <a href="\Profile"><svg xmlns="http://www.w3.org/2000/svg" height="40" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 30 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+          </svg></a>
+        </div>
+          <div class="post_btn"><a class="btn btn-dark btn-lg mr-sm-2" href="/Create-post" role="button">Create Post</a></div>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign Out</button>
+      </form>
+    </div>
+  </nav>
+  <div class="Post">
+    <form action="/Create-post" method="post">
+      <div class="description">
+          <div class="form-group">
+              <label for="exampleFormControlInput1">Title</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" name="postTitle">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Body Content</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" name="PostBody"></textarea>
+            </div>
+            <button class="btn btn-outline-success my-3 my-sm-0" type="submit">Save New Post</button>
+      </div>
+    </form>
+  </div>
+  <%-include("Partials/footer")-%>
