@@ -102,7 +102,7 @@ app.post("/Create-post",function(req,res){
   });
   post.save(function(err){
     if (!err){
-      res.redirect("single-post");
+      res.redirect("/single-post");
     }
   });
 })
@@ -122,26 +122,6 @@ app.post('/home-dashboard', function(req, res, next) {
     res.redirect('/');
   });
 });
-app.post('/Profile', function(req, res, next) {
-  req.logout(function(err) {
-    if (err) { return next(err); }
-    res.redirect('/');
-  });
-});
-app.post('/Create-post', function(req, res, next) {
-  req.logout(function(err) {
-    if (err) { return next(err); }
-    res.redirect('/');
-  });
-});
-app.post('/single-post',function(req,res,next){
-  req.logout(function(err){
-    if(err){
-      return next(err);
-    }
-    res.redirect('/')
-  })
-})
 app.listen(3000, function() {
   console.log("Server started on port 3000");
 });
