@@ -89,7 +89,7 @@ app.get("/Profile",function(req,res){
   res.render("Profile",{user:usercrio});
 })
 app.get("/single-post",function(req,res){
-  Post.find(function(err, posts){
+  Post.find({},function(err, posts){
     res.render("single-post", {
       posts: posts,
       });
@@ -102,7 +102,7 @@ app.post("/Create-post",function(req,res){
   });
   post.save(function(err){
     if (!err){
-      res.redirect("/single-post");
+        res.redirect("/single-post");
     }
   });
 })
