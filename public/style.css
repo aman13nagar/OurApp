@@ -146,7 +146,7 @@ html{
     display:flex;
     flex-direction: column;
     place-content: center;
-    width: 900px;
+    width: 700px;
     box-sizing: border-box;
     border: 1px solid black;
     border-radius: 5px;
@@ -160,7 +160,6 @@ html{
 }
 .single-Post p{
     margin-left:5px;
-    width:800px;
     place-content: center;
 }
 .single-Post .user_Edit{
@@ -224,6 +223,27 @@ footer {
         display:flex;
         place-content: center;
     }
+    .single-Post{
+        display:flex;
+        flex-direction: column;
+        place-content: center;
+        width: 250px;
+        box-sizing: border-box;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-top:10px;
+        margin-left:2px;
+    }
+    .single-Post h1{
+        font-size:0.7cm;
+        margin-left:5px;
+        font-weight: 100;
+    }
+    .single-Post p{
+        font-size:0.8em;
+        margin-left:5px;
+        place-content: center;
+    }
 } 
 @media (min-width:365px) and (max-width: 480px) { 
     .Form-container{
@@ -260,6 +280,27 @@ footer {
     .User p{
         font-size:0.9em;
         width:400px;
+    }
+    .single-Post{
+        display:flex;
+        flex-direction: column;
+        place-content: center;
+        width: 350px;
+        box-sizing: border-box;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-top:10px;
+        margin-left:2px;
+    }
+    .single-Post h1{
+        font-size:0.8cm;
+        margin-left:5px;
+        font-weight: 100;
+    }
+    .single-Post p{
+        font-size:0.9em;
+        margin-left:5px;
+        place-content: center;
     }
 } 
 @media(max-width:340px){
@@ -341,6 +382,26 @@ footer {
         font-size:1em;
         width:450px;
     }
+    .single-Post{
+        display:flex;
+        flex-direction: column;
+        place-content: center;
+        width: 450px;
+        box-sizing: border-box;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-top:10px;
+        margin-left:2px;
+    }
+    .single-Post h1{
+        margin-left:5px;
+        font-weight: 100;
+    }
+    .single-Post p{
+        font-size:1em;
+        margin-left:5px;
+        place-content: center;
+    }
 } 
 @media (min-width:605px) and (max-width: 887px) { 
     .Form-container{
@@ -380,6 +441,26 @@ footer {
     .User p{
         font-size:1em;
         width:500px;
+    }
+    .single-Post{
+        display:flex;
+        flex-direction: column;
+        place-content: center;
+        width: 550px;
+        box-sizing: border-box;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-top:10px;
+        margin-left:2px;
+    }
+    .single-Post h1{
+        margin-left:5px;
+        font-weight: 100;
+    }
+    .single-Post p{
+        font-size:1em;
+        margin-left:5px;
+        place-content: center;
     }
 } 
 @media(min-width:422px) and (max-width:578px){
