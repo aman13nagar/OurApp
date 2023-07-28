@@ -20,6 +20,7 @@ app.use(session({
 
 app.use(passport.initialize());
 app.use(passport.session());
+mongoose.set('strictQuery',true);
 mongoose.connect("mongodb+srv://aman13nagar:Aaman@cluster0.zecfzcz.mongodb.net/ourDB",{useNewUrlParser:true});
 const userSchema= new mongoose.Schema({
   username:String,
